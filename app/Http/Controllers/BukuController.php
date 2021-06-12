@@ -18,7 +18,7 @@ class BukuController extends Controller
      */
     public function index()
     {
-        $buku = Buku::join('Jenis_Buku','buku.id','=','Jenis_Buku.id')->get(); //join saja
+        $buku = Buku::join('Jenis_Buku','buku.id','=','Jenis_Buku.id')->get();
         
         return view('Buku0229',[
             'buku' => $buku
@@ -26,7 +26,7 @@ class BukuController extends Controller
     }
     public function export_excel()
 	{
-		return Excel::download(new BukuExport, 'buku.xlsx');
+		return Excel::download(new BukuExport, 'Data_1461900229.xlsx');
 	}
 
     /**
