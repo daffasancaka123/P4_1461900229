@@ -4,21 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
-    1461900206_KEGIATAN4_P
+    P4_1461900229
   </title>
   <link rel="stylesheet" href="{{asset('css/app.css')}}" />
 </head>
 <body>
   <div class="bg-white rounded-lg shadow-lg py-6">
     <div class="block overflow-x-auto mx-6">
-        <a href="/buku/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
       <table class="w-full text-left rounded-lg">
         <thead>
           <tr class="text-gray-800 border border-b-0">
             <th class="px-4 py-3">ID</th>
-            <th class="px-4 py-3">Judul</th>
+            <th class="px-4 py-3">Judul Buku</th>
             <th class="px-4 py-3">Tahun Terbit</th>
-            <th class="px-4 py-3">Jenis</th>
+            <th class="px-4 py-3">Kategori</th>
           </tr>
         </thead>
         <tbody>
@@ -36,6 +35,7 @@
         @endforeach
         </tbody>
       </table>
+      <a href="/buku/export_excel" class="btn btn-success my-3" target="_blank">Export</a>
       <br>
       
     </div>
