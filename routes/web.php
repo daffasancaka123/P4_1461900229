@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\BukuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/buku/export_excel', 'App\Http\Controllers\BukuController@export_excel');
+Route::get('/buku', 'App\Http\Controllers\BukuController@index');
